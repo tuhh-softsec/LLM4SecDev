@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./App.css";
 import Searchbar from "./widgets/searchbar";
 import PaperTable from "./widgets/papertable";
@@ -114,9 +114,9 @@ function App() {
   return (
     <div className="App">
       <div>
-        <div className="title has-text-centered text-xl">
-          LLM4SEC (Name in progress)
-        </div>
+        <h1 className="title has-text-centered text-6xl">
+          LLM4SEC Database (Name in progress)
+        </h1>
       </div>
       <div className="w-10/12 m-auto">
         <Searchbar onChange={(e) => setSearchTerm(e.target.value)} />

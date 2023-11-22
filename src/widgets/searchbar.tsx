@@ -16,7 +16,7 @@ const Searchbar = ({onChange}: SearchbarProps) => {
       <div className="inline-block grow">
         <input
           className="w-full p-1"
-          placeholder="Search for a title"
+          placeholder="Search for a title, or author (separate multiple queries with ';')"
           onChange={onChange}
         />
       </div>
