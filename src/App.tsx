@@ -5,6 +5,7 @@ import PaperTable from "./widgets/papertable";
 import TaskSelector from "./widgets/task-selection";
 import paperData from "./dataset/llms4sec_dataset.json";
 import Paper from "./model/paper";
+import Citation from "./widgets/citation";
 
 function getAllTasks(papers: Array<Paper>): Array<string> {
   const tasks = new Set<string>();
@@ -78,6 +79,7 @@ function App() {
           }}
         />
         <PaperTable paperData={filteredByTasks} />
+      <Citation />
       </div>
     </div>
   );

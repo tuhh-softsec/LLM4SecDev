@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "LLMs4Sec",
+  "name": "Database of LLMs used in security applications",
   "icons": [
     {
       "src": "favicon.ico",

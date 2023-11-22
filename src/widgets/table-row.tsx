@@ -9,7 +9,7 @@ type TableRowProps = {
   tasks: Array<string>;
 };
 
-const displayNumAuthors = 3;
+const displayNumAuthors = 1;
 
 function shortenAuthors(authors: string): string {
   let authorList = authors.split(" and ");

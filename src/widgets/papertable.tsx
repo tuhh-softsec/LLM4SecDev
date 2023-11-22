@@ -18,7 +18,7 @@ const PaperTable = ({ paperData }: PaperTableProps) => {
   }
 
   return (
-    <div className="border-2 rounded p-2">
+    <div className="border-2 rounded p-2 max-h-96 h-96 overflow-auto drop-shadow-sm">
       <table className="table-auto w-full border-spacing-y-1">
         <thead>
           <tr>{tableHeads}</tr>
