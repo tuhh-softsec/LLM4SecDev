@@ -113,12 +113,12 @@ function App() {
   );
   return (
     <div className="App">
-      <div>
-        <h1 className="title has-text-centered text-6xl">
-          LLM4SEC Database (Name in progress)
-        </h1>
-      </div>
       <div className="w-10/12 m-auto">
+        <div>
+          <h1 className="title has-text-centered text-6xl">
+            LLM4SEC Database
+          </h1>
+        </div>
         <Searchbar onChange={(e) => setSearchTerm(e.target.value)} />
         <div className="flex flox-row justify-between">
           <FilterSelection
