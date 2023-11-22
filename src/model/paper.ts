@@ -1,9 +1,10 @@
 type Paper = {
-  title: string,
-  authors: string,
-  year: string,
-  linkToPaper: string,
-  tasks: Array<string>
+  title: string;
+  authors: string;
+  year: string;
+  artifactUrls: Array<string>;
+  tasks: Array<string>;
+  featuredModels: Array<string>;
 }
 
 export default Paper;

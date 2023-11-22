@@ -1,7 +1,7 @@
 import Paper from "../model/paper";
 import TableRow from "./table-row";
 
-const colums = ["Title", "Authors", "Year", "Paper", "Tasks"];
+const colums = ["Title", "Authors", "Year", "Aritfacts", "Tasks", "Featured LLMs"];
 
 type PaperTableProps = {
   paperData: Array<Paper>;
@@ -10,16 +10,16 @@ type PaperTableProps = {
 const PaperTable = ({ paperData }: PaperTableProps) => {
   let tableData = [];
   let tableHeads = [];
-  for (let e of paperData) {
-    tableData.push(TableRow(e));
+  for (let p of paperData) {
+    tableData.push(<TableRow paper={p}/>);
   }
   for (let c of colums) {
-    tableHeads.push(<td className="font-bold text-left">{c}</td>);
+    tableHeads.push(<td className="font-bold">{c}</td>);
   }
 
   return (
-    <div className="border-2 rounded p-2 max-h-96 h-96 overflow-auto drop-shadow-sm">
-      <table className="table-auto w-full border-spacing-y-1">
+  <div className="border-2 rounded p-2 overflow-auto drop-shadow-sm max-h-[90%]">
+      <table className="table-auto w-full border-spacing-y-0">
         <thead>
           <tr>{tableHeads}</tr>
         </thead>
