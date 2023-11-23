@@ -1,0 +1,24 @@
+[
+  {
+    "title": "REEF: A Framework for Collecting Real-World Vulnerabilities and Fixes",
+    "authors": "Chaozheng Wang and Zongjie Li and Yun Peng and Shuzheng Gao and Sirong Chen and Shuai Wang and Cuiyun Gao and Michael R. Lyu",
+    "year": "2023",
+    "artifactUrls": [
+      "https://arxiv.org/abs/2309.08115",
+      "https://github.com/random/website"
+    ],
+    "tasks": ["Autocompletion"],
+    "featuredModels": ["GPT-Neo", "Llama-7B", "Llama-13B"]
+  },
+  {
+    "title": "REEF: A Framework for Collecting Real-World Vulnerabilities and Fixes",
+    "authors": "Zongjie Li and Yun Peng and Shuzheng Gao and Sirong Chen and Cuiyun Gao and Michael R. Lyu",
+    "year": "2023",
+    "artifactUrls": [
+      "https://arxiv.org/abs/2309.08115",
+      "https://github.com/random/website"
+    ],
+    "tasks": ["Program Repair"],
+    "featuredModels": ["ChatGPT", "Tongyi", "GPT-4"]
+  }
+]

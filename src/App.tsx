@@ -8,6 +8,8 @@ import Contribute from "./widgets/contibute";
 import FilterSelection from "./widgets/filter-selection";
 import Footer from "./widgets/footer";
 
+const dataSetUrl = "https://raw.githubusercontent.com/tuhh-softsec/LLM4Sec/dataset/llm4sec_dataset.json";
+
 type FilterInfo = {
   models: Array<string>;
   tasks: Array<string>;
@@ -97,7 +99,7 @@ function App() {
   const [paperData, setPaperData] = useState([]);
 
   if (paperData.length === 0) {
-    fetch(process.env.PUBLIC_URL + "dataset/llms4sec_dataset.json")
+    fetch(dataSetUrl)
       .then((val) => {
         return val.json();
       })
