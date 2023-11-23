@@ -3,6 +3,8 @@
 
 Community-driven effort to facilitate discovery, access and systematization of data related to Large Language Models used for security perposes.
 
+Visit: [Github Pages](https://tuhh-softsec.github.io/LLM4Sec/)
+
 ## Content Policy
 The bibliography section lists publications on LLMs for security appications that are 
 - peer-reviewed;
