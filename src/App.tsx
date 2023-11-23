@@ -8,7 +8,7 @@ import Contribute from "./widgets/contibute";
 import FilterSelection from "./widgets/filter-selection";
 import Footer from "./widgets/footer";
 
-const dataSetUrl = "https://raw.githubusercontent.com/tuhh-softsec/LLM4Sec/dataset/llm4sec_dataset.json";
+const dataSetUrl = "https://raw.githubusercontent.com/tuhh-softsec/LLM4Sec/main/dataset/llms4sec_dataset.json";
 
 type FilterInfo = {
   models: Array<string>;

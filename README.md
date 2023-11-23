@@ -1,4 +1,6 @@
 # LLM4Sec Dataset
+[![pages-build-deployment](https://github.com/tuhh-softsec/LLM4Sec/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/tuhh-softsec/LLM4Sec/actions/workflows/pages/pages-build-deployment)
+
 Community-driven effort to facilitate discovery, access and systematization of data related to Large Language Models used for security perposes.
 
 ## Content Policy
