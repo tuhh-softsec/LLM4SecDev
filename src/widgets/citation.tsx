@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const cite = `
 @misc{LLMs4Sec,
-    author = {Torge Hinrichs, Catherine Tony, Emanuele Ianonne},
+    author = {Torge Hinrichs, Catherine Tony, Emanuele Iannone},
     title = {LLMs4Sec},
     year = {2023},
     publisher = {Github},
