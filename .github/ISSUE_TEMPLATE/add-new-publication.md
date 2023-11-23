@@ -2,7 +2,6 @@
 description: File a bug report
 title: "[Paper Contribution]: "
 labels: ["Paper"]
-projects: []
 assignees:
   - gOATiful
 body:
