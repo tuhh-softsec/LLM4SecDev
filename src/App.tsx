@@ -118,7 +118,7 @@ function App() {
       <div className="w-10/12 m-auto">
         <div>
           <h1 className="title has-text-centered text-6xl">
-            LLM4SEC Database
+            LLMs4SEC Database
           </h1>
         </div>
         <Searchbar onChange={(e) => setSearchTerm(e.target.value)} />
