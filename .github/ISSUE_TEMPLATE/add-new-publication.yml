@@ -1,5 +1,5 @@
-name: Bug Report
-description: File a bug report
+name: Add a publication
+description: Contribute a paper to this project
 title: "[Paper Contribution]: "
 labels: ["Paper"]
 assignees:
