@@ -7,6 +7,8 @@ import Citation from "./widgets/citation";
 import Contribute from "./widgets/contibute";
 import FilterSelection from "./widgets/filter-selection";
 import Footer from "./widgets/footer";
+import ErrorMessage from "./widgets/error-message";
+import { react } from "@babel/types";
 
 const dataSetUrl = "https://raw.githubusercontent.com/tuhh-softsec/LLM4Sec/main/dataset/llms4sec_dataset.json";
 
@@ -97,15 +99,22 @@ function App() {
   const [selectedTasks, setSelectedTasks] = useState(Array<string>());
   const [selectedModels, setSelectedModels] = useState(Array<string>());
   const [paperData, setPaperData] = useState([]);
+  const [errorMsg, setErrorMsg] = useState("");
 
   if (paperData.length === 0) {
     fetch(dataSetUrl)
       .then((val) => {
         return val.json();
       })
-      .then((jsonData) => setPaperData(jsonData));
+      .then((jsonData) => {
+        setPaperData(jsonData);
+        setErrorMsg("");
+      }).catch((reason) => {
+        console.log("error:",reason)
+        setErrorMsg("Error retreiving databse.");
+      });
   }
-
+  console.log(paperData)
   const filterInfo = getFilterInfo(paperData);
   let filteredList = filterPapers(
     searchTerm,
@@ -113,6 +122,14 @@ function App() {
     selectedModels,
     paperData
   );
+
+  let tableView;
+  if (errorMsg === "") {
+    tableView = <PaperTable paperData={filteredList} />;
+  } else {
+    tableView = <ErrorMessage text="Error retrieving database." onRetry={() => console.log()} />;
+  }
+
   return (
     <div className="App">
       <div className="w-10/12 m-auto">
@@ -143,7 +160,7 @@ function App() {
           />
         </div>
         <Contribute />
-        <PaperTable paperData={filteredList} />
+        {tableView}
         <Citation />
       </div>
       <Footer />
