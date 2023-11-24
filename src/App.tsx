@@ -8,7 +8,6 @@ import Contribute from "./widgets/contibute";
 import FilterSelection from "./widgets/filter-selection";
 import Footer from "./widgets/footer";
 import ErrorMessage from "./widgets/error-message";
-import { react } from "@babel/types";
 
 const dataSetUrl = "https://raw.githubusercontent.com/tuhh-softsec/LLM4Sec/main/dataset/llms4sec_dataset.json";
 
@@ -94,6 +93,20 @@ function toggleSelection(currentSelection: Array<string>, selected: string) {
   return currentSelection;
 }
 
+
+function getPaperData(onSuccess: (value: any) => void, onError: ((value: any) => void)): void {
+  fetch(dataSetUrl)
+    .then((val) => {
+      return val.json();
+    })
+    .then((jsonData) => {
+      onSuccess(jsonData);
+    }).catch((reason) => {
+      onError(reason);
+    });
+}
+
+
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedTasks, setSelectedTasks] = useState(Array<string>());
@@ -102,19 +115,13 @@ function App() {
   const [errorMsg, setErrorMsg] = useState("");
 
   if (paperData.length === 0) {
-    fetch(dataSetUrl)
-      .then((val) => {
-        return val.json();
-      })
-      .then((jsonData) => {
-        setPaperData(jsonData);
-        setErrorMsg("");
-      }).catch((reason) => {
-        console.log("error:",reason)
-        setErrorMsg("Error retreiving databse.");
-      });
+    getPaperData((val) => {
+      setPaperData(val);
+      setErrorMsg("");
+    }, (reason) => {
+      setErrorMsg("Error retreiving databse.");
+    });
   }
-  console.log(paperData)
   const filterInfo = getFilterInfo(paperData);
   let filteredList = filterPapers(
     searchTerm,
@@ -127,7 +134,14 @@ function App() {
   if (errorMsg === "") {
     tableView = <PaperTable paperData={filteredList} />;
   } else {
-    tableView = <ErrorMessage text="Error retrieving database." onRetry={() => console.log()} />;
+    tableView = <ErrorMessage text="Error retrieving database." onRetry={() => {
+      getPaperData((val) => {
+        setPaperData(val);
+        setErrorMsg("");
+      }, (_) => {
+        setErrorMsg("Error retreiving databse.");
+      });
+    }} />;
   }
 
   return (

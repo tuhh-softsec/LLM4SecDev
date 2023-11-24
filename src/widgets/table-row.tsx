@@ -34,9 +34,7 @@ function shortenAuthors(authors: string): string {
 
 function createAritfactIcons(artifacts: Array<string>): Array<ReactNode> {
   let artifactIcons: Array<ReactNode> = [];
-  console.log("artifacts", artifacts)
   artifacts.forEach((url) => {
-    console.log(url)
     let icon: IconDefinition = faFile;
     iconMapping.forEach((val, key) => {
       if (url.includes(key)) {
