@@ -1,3 +1,19 @@
 [
-
+    {
+        "title": "Large Language Models for Code: Security Hardening and Adversarial Testing",
+        "authors": "Jingxuan He and Martin Vechev",
+        "year": "2023",
+        "artifactsUrls": [
+            "https://arxiv.org/pdf/2302.05319.pdf"
+        ],
+        "tasks": [
+            "Vulnerability Detection",
+            "Vulnerability Repair",
+            "Adversarial Testing"
+        ],
+        "featuredModels": [
+            "CodeGen",
+            "SVEN"
+        ]
+    }
 ]
