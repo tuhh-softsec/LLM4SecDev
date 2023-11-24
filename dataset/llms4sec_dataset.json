@@ -15,5 +15,88 @@
             "CodeGen",
             "SVEN"
         ]
+    },
+    {
+        "title": "REEF: A Framework for Collecting Real-World Vulnerabilities and Fixes",
+        "authors": "Chaozheng Wang and Zongjie Li and Yun Peng and Shuzheng Gao and Sirong Chen and Shuai Wang and Cuiyun Gao and Michael R. Lyu",
+        "year": "2023",
+        "artifactUrls": [
+            "https://arxiv.org/pdf/2309.08115.pdf"
+        ],
+        "tasks": [
+            "Vulnerability Detection"
+        ],
+        "featuredModels": [
+            "GPT-3.5",
+            "GPT-4",
+            "LLAMA",
+            "Vicuna",
+            "ChatGLM",
+            "Tongyi",
+            "GPT-Neo"
+        ]
+    },
+    {
+        "title": "Broken Promises: Measuring Confounding Effects in Learning-based Vulnerability Discovery",
+        "authors": "Erik Imgrund and Tom Ganz and Martin Härterich and Lukas Pirch and Niklas Risse and Konrad Rieck",
+        "year": "2023",
+        "artifactUrls": [
+            "https://www.mlsec.org/docs/2023-aisec.pdf"
+        ],
+        "tasks": [
+            "Vulnerability Detection"
+        ],
+        "featuredModels": [
+            "Code T5+",
+            "LineVuln"
+        ]
+    },
+    {
+        "title": "Not The End of Story: An Evaluation of ChatGPT-Driven Vulnerability Description Mappings",
+        "authors": "Erik Imgrund and Tom Ganz and Martin Härterich and Lukas Pirch and Niklas Risse and Konrad Rieck",
+        "year": "2023",
+        "artifactUrls": [
+            "https://aclanthology.org/2023.findings-acl.229.pdf"
+        ],
+        "tasks": [
+            "Vulnerability Mapping"
+        ],
+        "featuredModels": [
+            "Davinci",
+            "GPT-3.5"
+        ]
+    },
+    {
+        "title": "VulLibGen: Identifying Vulnerable Third-Party Libraries via Generative Pre-Trained Mode",
+        "authors": "Tianyu Chen and Lin Li and Liuchuan Zhu and Zongyang Li and Guangtai Liang and Ding Li and Qianxiang Wang and Tao Xie",
+        "year": "2023",
+        "artifactUrls": [
+            "https://arxiv.org/pdf/2308.04662.pdf"
+        ],
+        "tasks": [
+            "Vulnerability Detection"
+        ],
+        "featuredModels": [
+            "LLAMA"
+        ]
+    },
+    {
+        "title": "Enhancing Large Language Models for Secure Code Generation: A Dataset-driven Study on Vulnerability Mitigation",
+        "authors": "Tianyu Chen and Lin Li and Liuchuan Zhu and Zongyang Li and Guangtai Liang and Ding Li and Qianxiang Wang and Tao Xie",
+        "year": "2023",
+        "artifactUrls": [
+            "https://arxiv.org/pdf/2310.16263.pdf"
+        ],
+        "tasks": [
+            "Vulnerability Detection",
+            "Program Repair",
+            "Vulnerability Classification"
+        ],
+        "featuredModels": [
+            "GPT-3.5",
+            "Starcoder",
+            "LaMDA",
+            "InCoder"
+        ]
     }
 ]
