@@ -8,6 +8,7 @@ import Contribute from "./widgets/contibute";
 import FilterSelection from "./widgets/filter-selection";
 import Footer from "./widgets/footer";
 import ErrorMessage from "./widgets/error-message";
+import IntroSection from "./widgets/intro_section";
 
 const dataSetUrl = "https://raw.githubusercontent.com/tuhh-softsec/LLM4SecDev/main/dataset/llms4sec_dataset.json";
 
@@ -149,9 +150,10 @@ function App() {
       <div className="w-10/12 m-auto">
         <div>
           <h1 className="title has-text-centered text-6xl">
-            LLMs4SEC Database
+            LLMs4SecDev Database
           </h1>
         </div>
+        <IntroSection />
         <Searchbar onChange={(e) => setSearchTerm(e.target.value)} />
         <div className="flex flox-row justify-between">
           <FilterSelection
