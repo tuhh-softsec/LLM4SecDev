@@ -1,9 +1,9 @@
-# LLM4Sec Dataset
-[![pages-build-deployment](https://github.com/tuhh-softsec/LLM4Sec/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/tuhh-softsec/LLM4Sec/actions/workflows/pages/pages-build-deployment)
+# LLM4SecDev Dataset
+[![pages-build-deployment](https://github.com/tuhh-softsec/LLM4SecDev/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/tuhh-softsec/LLM4SecDev/actions/workflows/pages/pages-build-deployment)
 
 Community-driven effort to facilitate discovery, access and systematization of data related to Large Language Models used for security perposes.
 
-Visit: [Github Pages](https://tuhh-softsec.github.io/LLM4Sec/)
+Visit: [Github Pages](https://tuhh-softsec.github.io/LLM4SecDev/)
 
 ## Content Policy
 The bibliography section lists publications on LLMs for security appications that are 

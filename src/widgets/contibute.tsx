@@ -2,7 +2,7 @@ import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const contributeUrl =
-  "https://github.com/tuhh-softsec/LLM4Sec/issues/new?assignees=gOATiful&labels=Paper&projects=&template=add-new-publication.yml&title=%5BPaper+Contribution%5D%3A+";
+  "https://github.com/tuhh-softsec/LLM4SecDev/issues/new?assignees=gOATiful&labels=Paper&projects=&template=add-new-publication.yml&title=%5BPaper+Contribution%5D%3A+";
 
 const Contribute = () => {
   return (

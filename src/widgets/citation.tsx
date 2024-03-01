@@ -9,7 +9,7 @@ const cite = `
     title = {LLMs4Sec},
     year = {2023},
     publisher = {Github},
-    howpublished = "\\url{https://tuhh-softsec.github.io/LLM4Sec/}"
+    howpublished = "\\url{https://tuhh-softsec.github.io/LLM4SecDev/}"
   }`;
 
 
