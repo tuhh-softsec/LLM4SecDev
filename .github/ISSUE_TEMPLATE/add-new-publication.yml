@@ -9,7 +9,7 @@ body:
     attributes:
       value: |
         Thanks for taking the time to contribute to this project!
-  - type: input
+  - type: textarea
     id: title
     attributes:
       label: BibTex entry

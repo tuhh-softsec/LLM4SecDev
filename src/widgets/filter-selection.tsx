@@ -2,7 +2,7 @@ import { ReactElement } from "react";
 import Chip from "./chip";
 
 type FilterSelectionProps = {
-  headlineText: string,
+  headlineText: string;
   selectedOptions: Array<string>;
   allOptions: Array<string>;
   onChipClick: (chipText: string) => any;
@@ -12,7 +12,7 @@ const FilterSelection = ({
   headlineText,
   selectedOptions,
   allOptions,
-  onChipClick
+  onChipClick,
 }: FilterSelectionProps) => {
   let taskChips: Array<ReactElement> = [];
   allOptions.forEach((val) => {
@@ -26,11 +26,9 @@ const FilterSelection = ({
   });
 
   return (
-    <div className="rounded border-slate-200 border-2 p-2 mb-4 basis-[49.5%]">
-      <div className="text-left my-2">
-        {headlineText}
-      </div>
-      <div className="flex flex-wrap">{taskChips}</div>
+    <div className="rounded border-slate-200 border-2 p-2 mb-4 basis-[49.5%] max-h-30 overflow-auto">
+      <div className="text-left my-2">{headlineText}</div>
+      <div className="flex flex-wrap gap-1">{taskChips}</div>
     </div>
   );
 };

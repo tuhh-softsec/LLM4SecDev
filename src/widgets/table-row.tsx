@@ -59,7 +59,7 @@ const TableRow = ({ paper }: TableRowProps) => {
       <td className="">{paper.year}</td>
       <td>{createAritfactIcons(paper.artifactUrls)}</td>
       <td className="">{paper.tasks.join(", ")}</td>
-      <td className="text-left">{paper.featuredModels.join(", ")}</td>
+      <td className="">{paper.featuredModels.join(", ")}</td>
     </tr>
   );
 };
