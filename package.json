@@ -1,7 +1,7 @@
 {
-  "name": "llm4sec",
+  "name": "llm4secdev",
   "version": "0.1.0",
-  "homepage": "https://tuhh-softsec.github.io/LLM4Sec",
+  "homepage": "https://tuhh-softsec.github.io/LLM4SecDev",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
