@@ -12,22 +12,8 @@ body:
   - type: input
     id: title
     attributes:
-      label: Title
-      description: "What is the title of the paper you want to contribute?"
-    validations:
-      required: true
-  - type: input
-    id: authors
-    attributes:
-      label: Authors
-      description: "Who are the authors of the paper (seperate multiple authors with 'and')"
-    validations:
-      required: true
-  - type: input
-    id: year
-    attributes:
-      label: Year
-      description: "When was the work published?"
+      label: BibTex entry
+      description: "Enter the corresponding BibTex entry for the publication you want to add"
     validations:
       required: true
   - type: textarea
