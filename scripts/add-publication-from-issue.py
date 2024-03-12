@@ -56,7 +56,8 @@ def extract_meta_from_bibtex(bib: str):
 
 
 def close_issue(issue):
-    issue.create_comment("Added contribution to database.\nThank you for contributing to this project.")
+    issue.create_comment(
+        "Added contribution to database.\nThank you for contributing to this project.")
     issue.edit(state='closed')
 
 
@@ -87,12 +88,19 @@ def parse_contribution_data(issueBody: str) -> Contribution:
                         featuredModels=models,
                         tasks=tasks)
 
+
 def commit_changes(msg: str):
     repo = Repo(".")
     add_files = [DATASET_PATH]
     repo.index.add(add_files)
     repo.index.commit(msg)
     print(str(add_files) + " commited to repo")
+
+
+def push_changes():
+    repo = Repo(".")
+    repo.remote().pull()
+    repo.remote().push()
 
 
 if __name__ == "__main__":
@@ -114,3 +122,4 @@ if __name__ == "__main__":
             commit_changes(commit_msg)
         else:
             print(contribtion, "already in dataset")
+    push_changes()
